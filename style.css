@@ -1,0 +1,169 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+
+body {
+    background-color:  #f5f5f5;
+}
+
+
+.zbozi {
+    display: flex;
+    width: 670px;
+    height: 440px;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 1px 1px 20px  #959595;
+    border-radius: 5%;
+}
+    
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.vizual {
+    width: 50%;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+    color: white;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+
+}
+
+.detaily {
+    width: 50%;
+    background-color: white;
+   /* box-shadow: 1px 1px 20px  #959595; */
+    border-radius: 0 5px 5px 0;
+    padding: 30px;
+}
+
+.slogan {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cena {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.zaruka {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.nazev {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.parametr {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.velikosti {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+.vybrana {
+    border-radius: 50%;
+    padding: 5px;
+    color: red;
+    border: 1px solid red;
+   
+}
+
+.tlacitko {
+    background-color: #f15f42;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px  #959595;
+}
+
+.popis {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.bota {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.logo {
+    padding: 30px 0 0 30px;
+}
+
+.slogan {
+    padding-left: 30px;
+}
+
+.cenovka {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.produkt {
+    color: gray;
+    font-size: 15px;
+}
+
+.popis {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #06d7c1;
+    font-size: 15px;
+}
+
+.akce {
+    margin-top: 60px;
+}
+
+a:hover {
+    color: red;
+    background-color: darkred;
+}
